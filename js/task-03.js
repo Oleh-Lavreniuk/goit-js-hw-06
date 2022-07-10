@@ -34,3 +34,10 @@ galleryList.setAttribute(
   "style",
   "list-style-type:none; display:flex; flex-direction:column;"
 );
+
+// galleryList.classList.add("js-gallery");
+// galleryList.style.listStyleType = "none";
+// galleryList.style.display = "flex";
+// galleryList.style.flexDirection = "column";
+
+console.log(galleryList);
