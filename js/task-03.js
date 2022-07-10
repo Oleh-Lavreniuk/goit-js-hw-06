@@ -16,7 +16,7 @@ const images = [
 // !--- Variant-1 map---
 // *-1-short version
 const galleryMarkup = images.map(
-  ({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`
+  ({ url, alt }) => `<li><img src="${url}" alt="${alt}" width="400"></li>`
 );
 
 // *-2-long version
@@ -30,4 +30,7 @@ const galleryMarkup = images.map(
 const galleryList = document.querySelector(".gallery");
 galleryList.insertAdjacentHTML("afterbegin", galleryMarkup);
 
-galleryList.setAttribute("style", "list-style-type:none; display: flex;");
+galleryList.setAttribute(
+  "style",
+  "list-style-type:none; display:flex; flex-direction:column;"
+);
