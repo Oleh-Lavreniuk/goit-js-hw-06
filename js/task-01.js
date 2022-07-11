@@ -6,7 +6,7 @@ for (const elem of categoriesListRef) {
   const categoryNameRef = elem.querySelector("h2");
   console.log("Category:", categoryNameRef.textContent);
 
-  const categoryElListRef = elem.querySelectorAll("li");
+  const categoryElListRef = Array.from(elem.querySelectorAll("li"));
   console.log("Elements:", categoryElListRef.length);
 }
 

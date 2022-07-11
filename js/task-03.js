@@ -32,12 +32,13 @@ galleryList.insertAdjacentHTML("afterbegin", galleryMarkup);
 
 galleryList.setAttribute(
   "style",
-  "list-style-type:none; display:flex; flex-direction:column;"
+  "list-style-type:none; display:flex; flex-direction:column; margin-left:30px;"
 );
 
 // galleryList.classList.add("js-gallery");
 // galleryList.style.listStyleType = "none";
 // galleryList.style.display = "flex";
 // galleryList.style.flexDirection = "column";
+// galleryList.style.marginLeft = "30px";
 
 console.log(galleryList);

@@ -1,21 +1,23 @@
 const decrementBtn = document.querySelector('button[data-action="decrement"]');
-console.log("decrementBtn", decrementBtn);
+console.log("decrementBtn:", decrementBtn);
 
 const incrementBtn = document.querySelector('button[data-action="increment"]');
-console.log("incrementBtn", incrementBtn);
+console.log("incrementBtn:", incrementBtn);
 
 const counterRef = document.querySelector("#value");
-console.log("counterRef", counterRef);
+console.log("counterRef:", counterRef);
 
-const counterValue = (counterRef.textContent = 0);
-console.log("counterValue", counterValue);
+let counterValue = (counterRef.textContent = 0);
+console.log("counterValue:", counterValue);
 
 decrementBtn.addEventListener("click", (event) => {
-  counterValue += decrementBtn.textContent;
+  counterValue += Number(decrementBtn.textContent);
+  counterRef.innerHTML = counterValue;
+  console.log("counterValue:", counterValue);
 });
 
 incrementBtn.addEventListener("click", (event) => {
-  counterValue += incrementBtn.textContent;
+  counterValue += Number(incrementBtn.textContent);
+  counterRef.innerHTML = counterValue;
+  console.log("counterValue:", counterValue);
 });
-
-console.log((counterRef.innerHTML = counterValue));
