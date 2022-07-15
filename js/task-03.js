@@ -15,13 +15,13 @@ const images = [
 
 // !--- Variant-1 map---
 // *-1-short version
-const galleryMarkup = images.map(
-  ({ url, alt }) => `<li><img src="${url}" alt="${alt}" width="400"></li>`
-);
+const galleryMarkup = images
+  .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}" width="400"></li>`)
+  .join("");
 
 // *-2-long version
 // const galleryImg = ({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`;
-// const galleryMarkup = images.map((item) => galleryImg(item));
+// const galleryMarkup = images.map((item) => galleryImg(item)).join("");
 
 // !--- Variant-2 reduce---
 // const galleryImg = ({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`;
