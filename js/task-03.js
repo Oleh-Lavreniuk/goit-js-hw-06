@@ -18,6 +18,7 @@ const images = [
 const galleryMarkup = images
   .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}" width="400"></li>`)
   .join("");
+// console.log("galleryMarkup", galleryMarkup);
 
 // *-2-long version
 // const galleryImg = ({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`;
